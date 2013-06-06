@@ -22,7 +22,7 @@ object BubbleSort {
      */
     def bubbleSortOneRun(shouldRerun: Boolean, ints: Array[Int]): (Boolean, Array[Int]) = {
 
-      printArray("bubbleSortOneRun", ints)
+//      printArray("bubbleSortOneRun", ints)
 
       if (ints.length <= 1) {
 
@@ -39,7 +39,7 @@ object BubbleSort {
           ints(0) = ints(1)
           ints(1) = head
 
-          printArray("ints after swap", ints)
+//          printArray("ints after swap", ints)
 
           //  Apply the algorithm for the tail of the array
           shouldRerunForTail = true;
@@ -51,7 +51,7 @@ object BubbleSort {
 
         val partialResult = Array(ints(0)) ++ resultTupleForTail._2
 
-        printArray("partialResult", partialResult)
+//        printArray("partialResult", partialResult)
 
         return (resultTupleForTail._1, partialResult)
 
@@ -74,7 +74,7 @@ object BubbleSort {
 
     val output = bubbleSort(input);
 
-    printArray("input", input)  sadsa
+    printArray("input", input)
 
     printArray("output", output)
   }
